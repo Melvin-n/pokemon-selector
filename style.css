@@ -1,0 +1,252 @@
+body{
+    font-family: "Actor", sans-serif;
+    color: white;
+    background-color: rgb(14, 13, 13);
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+.typebutton{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+#container{
+    display: flex;
+    justify-content: center;
+
+}
+#typeSelector{
+    justify-items: center;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.teamdisplay{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+    justify-content: space-around;
+
+}
+
+#team2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;  
+    border: 12px outset;
+    /*background-color: rgba(255, 255, 255, 0.5); */
+    border-radius: 10%;
+}
+
+#name2{
+    margin-left: 40px;
+}
+
+
+#teamcontainer{
+    display: flex;
+    justify-content: center;
+
+}
+#teamcontainer .remove {
+    opacity:0;
+}
+.team{
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 2fr, 1fr;
+}
+
+.image{
+    width: 180px;
+    height: 200px;
+}
+
+#name1{
+    display: flex;
+    align-items: baseline;
+}
+
+#typetext{
+    align-self: center;
+    font-size: 50px;
+    position: absolute;
+    margin-top: 400px;
+}
+
+
+#modal{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+    top: 0;
+    left: 0;
+    
+}
+#modal.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#overlay.dim{
+    opacity: 0.5;
+}
+
+#modal.show{
+   opacity: 1;
+   z-index: 10;
+
+}
+
+#sixchosen{
+    color:black;
+    border: solid 2px white;
+    box-shadow:2px 2px rgb(0, 0, 0);
+    width: 400px;
+    height: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgba(248, 248, 248, 0.658);
+    border-radius: 10%;
+    text-align: center;
+}
+
+
+ .endbtn{
+     width: 50px;
+     height: 30px;
+     font-size: 20px;
+
+ }
+
+
+
+
+#bug{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Pok%C3%A9mon_Bug_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#dark{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#electric{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#fairy{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#dragon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a6/Pok%C3%A9mon_Dragon_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#fighting{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#fire{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#steel{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#flying{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Pok%C3%A9mon_Flying_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#ghost{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Pok%C3%A9mon_Ghost_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#grass{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f6/Pok%C3%A9mon_Grass_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#ground{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#ice{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#normal{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#poison{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#psychic{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#rock{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+#water{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg');
+    width: 35px;
+    height: 35px;  
+}
+
+
+@media (max-width: 400px) {
+    #typeSelector{
+        justify-items: center;
+        width: 500px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    } 
+    .teamdisplay{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 10px;
+        justify-content: space-around;
+    
+}
+}
+

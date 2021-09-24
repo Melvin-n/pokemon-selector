@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+    <title>Pokemon team selector</title>
+</head>
+<body>
+    <div id="overlay">
+    
+    <h1>Gen 1 Team Selector</h1>
+    <div id=container>
+    <div id="typeSelector">
+        <button class="typebutton" id="fire" onclick="firetype()"></button>
+        <button class="typebutton" id="water" onclick="watertype()"></button>        
+        <button class="typebutton" id="grass" onclick="grasstype()"></button>
+        <button class="typebutton" id="normal" onclick="normaltype()"></button>
+        <button class="typebutton" id="electric" onclick="electrictype()"></button>
+        <button class="typebutton" id="ice" onclick="icetype()"></button>
+        <button class="typebutton" id="fighting" onclick="fightingtype()"></button>
+        <button class="typebutton" id="poison" onclick="poisontype()"></button>
+        <button class="typebutton" id="flying" onclick="flyingtype()"></button>
+        <button class="typebutton" id="ground" onclick="groundtype()"></button>
+        <button class="typebutton" id="psychic" onclick="psychictype()"></button>
+        <button class="typebutton" id="bug" onclick="bugtype()"></button>
+        <button class="typebutton" id="rock" onclick="rocktype()"></button>
+        <button class="typebutton" id="ghost" onclick="ghosttype()"></button>
+        <button class="typebutton" id="dark" onclick="darktype()"></button>
+        <button class="typebutton" id="dragon" onclick="dragontype()"></button>
+        <button class="typebutton" id="steel" onclick="steeltype()"></button>
+        <button class="typebutton" id="fairy" onclick="fairytype()"></button>
+
+    </div>
+
+   
+</div>
+<div id="teamcontainer">
+
+<div id="teamdisplay" class="teamdisplay">
+        
+</div>
+<div id="typetext">
+<h2>Select your type!</h2> 
+</div> 
+
+</div>
+</div>
+
+<div id="modal" class="hide">
+    <div id="sixchosen">
+        <h2>Your team of 6 has been chosen!  Would you like to reset?</h2>
+        <div id="buttons">
+        <button id="yesbtn" class="endbtn" onclick="reset()">Yes</button> 
+        <button id="nobtn" class="endbtn" onclick="closeModal()">No</button>
+        </div>
+    </div>
+    </div>
+
+<script src="script.js"> </script>    
+</body>
+</html>
